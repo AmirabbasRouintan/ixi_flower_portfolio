@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { incrementViewCount, getViewCount } from '../services/viewCounter';
+import { incrementViewCount } from '../services/viewCounter';
 
 /**
  * Custom hook to manage the view counter

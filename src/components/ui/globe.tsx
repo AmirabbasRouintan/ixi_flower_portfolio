@@ -1,6 +1,7 @@
 "use client";
 
-import createGlobe, { COBEOptions } from "cobe";
+import createGlobe from "cobe";
+import type { COBEOptions } from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
 import { useEffect, useRef } from "react";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+
 import { Button } from "@/components/ui/stateful-button";
 
 export function SocialMediaButtons() {
@@ -13,7 +13,7 @@ export function SocialMediaButtons() {
 
   // Functions to handle button clicks with navigation
   const handleLinkedInClick = () => {
-    return new Promise((resolve) => {
+    return new Promise<void>((resolve) => {
       setTimeout(() => {
         window.open(socialLinks.linkedin, "_blank");
         resolve();
@@ -22,7 +22,7 @@ export function SocialMediaButtons() {
   };
 
   const handleGitHubClick = () => {
-    return new Promise((resolve) => {
+    return new Promise<void>((resolve) => {
       setTimeout(() => {
         window.open(socialLinks.github, "_blank");
         resolve();
@@ -31,7 +31,7 @@ export function SocialMediaButtons() {
   };
 
   const handleYouTubeClick = () => {
-    return new Promise((resolve) => {
+    return new Promise<void>((resolve) => {
       setTimeout(() => {
         window.open(socialLinks.youtube, "_blank");
         resolve();

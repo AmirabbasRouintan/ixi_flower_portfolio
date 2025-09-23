@@ -2,7 +2,6 @@
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
-import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import python_tele_bot from "../assets/python_tel_bot2.png";
 
 import { TypingAnimation } from "./ui/typing-animation";
@@ -42,9 +41,6 @@ import ShinyText from "./ShinyText";
 import Masonry from "./Masonry";
 import {
   Database,
-  FileCode,
-  Globe,
-  Server,
   Shield,
   Smartphone,
   Terminal,
@@ -124,65 +120,83 @@ const courses = [
   },
 ];
 
-const items = [
+// Define items with proper typing to match the Item interface
+const items: Array<{
+  id: string;
+  img: string;
+  url: string;
+  height: number;
+}> = [
   {
     id: "1",
     img: img1,
+    url: "#",
     height: 1000,
   },
   {
     id: "2",
     img: img2,
+    url: "#",
     height: 900,
   },
   {
     id: "3",
     img: img3,
+    url: "#",
     height: 1000,
   },
   {
     id: "4",
     img: img4,
+    url: "#",
     height: 800,
   },
   {
     id: "5",
     img: img5,
+    url: "#",
     height: 1000,
   },
   {
     id: "6",
     img: img6,
+    url: "#",
     height: 900,
   },
   {
     id: "7",
     img: img7,
+    url: "#",
     height: 800,
   },
   {
     id: "8",
     img: img8,
+    url: "#",
     height: 700,
   },
   {
     id: "9",
     img: img9,
+    url: "#",
     height: 900,
   },
   {
     id: "10",
     img: img10,
+    url: "#",
     height: 700,
   },
   {
     id: "11",
     img: "https://i.pinimg.com/1200x/5a/6f/cf/5a6fcf2dec919817e76e5e4e369f4887.jpg",
+    url: "#",
     height: 1000,
   },
   {
     id: "12",
     img: "https://i.pinimg.com/736x/04/59/e4/0459e452fd5a0ae7bfc09a0fb48cbff1.jpg",
+    url: "#",
     height: 1000,
   },
 ];
@@ -300,7 +314,7 @@ export function Portfolio() {
                           <h3 className="font-semibold text-white text-sm truncate">
                             <DecryptedText
                               text={course.title}
-                              animateOn="view"
+                              animateOn="scroll"
                               speed={10}
                               maxIterations={100}
                             />
@@ -308,7 +322,7 @@ export function Portfolio() {
                           <p className="text-sm text-gray-400 mt-1 line-clamp-2">
                             <DecryptedText
                               text={course.description}
-                              animateOn="view"
+                              animateOn="scroll"
                               speed={10}
                               maxIterations={100}
                               className="text-sm text-gray-400"

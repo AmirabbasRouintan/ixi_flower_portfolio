@@ -61,8 +61,9 @@ export function TypingAnimation({
         if (React.isValidElement(child)) {
           // For React elements, get their text content
           const element = child as React.ReactElement;
-          if (element.props.children) {
-            return React.Children.toArray(element.props.children).join('');
+          const props = element.props as { children?: React.ReactNode };
+          if (props && props.children) {
+            return React.Children.toArray(props.children).join('');
           }
           return '';
         }
@@ -103,7 +104,11 @@ export function TypingAnimation({
       
       if (React.isValidElement(node)) {
         const element = node as React.ReactElement;
-        const processedChildren = React.Children.map(element.props.children, processNode);
+        const props = element.props as { children?: React.ReactNode };
+        const processedChildren = React.Children.map(
+          props && props.children ? props.children : null, 
+          processNode
+        );
         
         if (processedChildren && processedChildren.some(child => child !== null)) {
           return React.cloneElement(element, {}, processedChildren);

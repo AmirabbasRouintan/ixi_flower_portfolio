@@ -69,6 +69,7 @@ interface MasonryProps {
   hoverScale?: number;
   blurToFocus?: boolean;
   colorShiftOnHover?: boolean;
+  className?: string;
 }
 
 const Masonry: React.FC<MasonryProps> = ({
