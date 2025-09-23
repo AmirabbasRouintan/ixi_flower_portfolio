@@ -767,7 +767,7 @@ export function Portfolio() {
             who want to deploy functional Telegram bots efficiently.
           </p>
           <div className="mt-3 max-w-xl text-lg font-bold tracking-tight md:text-xl text-left">
-            Colaborate With My friend{" "}
+            Collaborate With My friend{" "}
             <PointerHighlight
               rectangleClassName="bg-white-200 dark:bg-white-700 border-white-300 dark:border-white-600 leading-loose"
               pointerClassName="text-yellow-500 h-6 w-6"
