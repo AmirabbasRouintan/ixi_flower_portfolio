@@ -602,7 +602,7 @@ export function Portfolio() {
       </div>
 
       <h2 className="text-4xl font-bold text-white mt-40 sm:mt-20 mb-15 sm:mb-20">
-        Education - Courses
+        My Projects
       </h2>
       <div className="mx-auto grid max-w-[80rem] grid-cols-1 gap-12 sm:grid-cols-3 text-white mt-10 sm:mt-0 mb-40 sm:mb-60">
         <div className="rounded-lg">
