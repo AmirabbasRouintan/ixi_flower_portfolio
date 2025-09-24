@@ -45,19 +45,19 @@ export function SocialMediaButtons() {
     <div className="flex flex-wrap gap-4 justify-center items-center p-6">
       <StaticButton 
         onClick={handleLinkedInClick}
-        className="bg-blue-700 hover:bg-white hover:text-blue-700"
+        className="bg-blue-700 hover:bg-blue-900 hover:text-white-700"
       >
         LinkedIn
       </StaticButton>
       <StaticButton 
         onClick={handleGitHubClick}
-        className="bg-gray-900 hover:bg-white hover:text-gray-900"
+        className="bg-gray-900 hover:bg-gray-800 hover:text-white-900"
       >
         GitHub
       </StaticButton>
       <StaticButton 
         onClick={handleYouTubeClick}
-        className="bg-red-600 hover:bg-white hover:text-red-600"
+        className="bg-red-600 hover:bg-red-800 hover:text-white-600"
       >
         YouTube
       </StaticButton>
