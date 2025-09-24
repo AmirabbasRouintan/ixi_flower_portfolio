@@ -1,4 +1,5 @@
 "use client";
+import python_robot from "../assets/python_robot.svg";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { Database, Shield, Smartphone, Terminal } from "lucide-react";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
@@ -590,7 +591,7 @@ export function Portfolio() {
                 Adaptability & Quick Learning
               </h3>
               <ShinyText
-                text="I possess exceptional ability to quickly learn and adapt to new technologies. Beyond my core skills, I've worked with numerous programming languages including C#, Go, Kotlin, Lua, and many others. This versatility allows me to select the right tool for each project and seamlessly integrate into diverse development environments."
+                text="I possess exceptional ability to quickly learn and adapt to new technologies. Beyond my core skills, I've worked with numerous programming languages including <span style='color:#B9B9B9; font-weight:bold;'>C#</span>, <span style='color:#B9B9B9; font-weight:bold;'>Go</span>, <span style='color:#B9B9B9; font-weight:bold;'>Kotlin</span>, <span style='color:#B9B9B9; font-weight:bold;'>Lua</span>, and many too <span style='color:#B9B9B9; font-weight:bold;'>others</span>. This versatility allows me to select the right tool for each project and seamlessly integrate into diverse development environments."
                 disabled={false}
                 speed={3}
                 className="custom-class text-center mx-auto"
@@ -607,7 +608,7 @@ export function Portfolio() {
         <div className="rounded-lg">
           <img
             src={plastic}
-            alt="Collab Tool"
+            alt="plastic"
             className="h-48 w-4/5 mx-auto md:h-60 md:w-110 rounded-xl object-cover"
           />
           <div className="mt-3 max-w-md text-lg font-bold tracking-tight md:text-xl text-left pl-11 sm:pl-0">
@@ -629,7 +630,7 @@ export function Portfolio() {
         <div className="rounded-lg">
           <img
             src={python_tele_bot}
-            alt="Innovative Solutions"
+            alt="python_tele_bot"
             className="h-48 w-4/5 mx-auto md:h-60 md:w-110 rounded-xl object-cover"
           />
           <div className="mt-3 max-w-md text-lg font-bold tracking-tight md:text-xl text-left pl-11 sm:pl-0">
@@ -652,7 +653,7 @@ export function Portfolio() {
         <div className="rounded-lg">
           <img
             src={ifi_colector}
-            alt="Sustainable Technology"
+            alt="ifi_colector"
             className="h-48 w-4/5 mx-auto md:h-60 md:w-110 rounded-xl object-cover"
           />
           <div className="mt-3 max-w-md text-lg font-bold tracking-tight md:text-xl text-left pl-11 sm:pl-0">
@@ -666,7 +667,7 @@ export function Portfolio() {
         <div className="rounded-lg">
           <img
             src={eco}
-            alt="Sustainable Technology"
+            alt="eco-mmerce"
             className="h-48 w-4/5 mx-auto md:h-60 md:w-110 rounded-xl object-cover"
           />
           <div className="mt-3 max-w-md text-lg font-bold tracking-tight md:text-xl text-left pl-11 sm:pl-0">
@@ -686,7 +687,7 @@ export function Portfolio() {
         <div className="rounded-lg">
           <img
             src={nvim}
-            alt="Sustainable Technology"
+            alt="nvim"
             className="h-48 w-4/5 mx-auto md:h-60 md:w-110 rounded-xl object-cover"
           />
           <div className="mt-3 max-w-xs text-lg font-bold tracking-tight md:text-xl text-left pl-11 sm:pl-0">
@@ -704,7 +705,32 @@ export function Portfolio() {
             My previous Neovim configuration file. My new one is better 😁
           </p>
         </div>
+
+        <div className="rounded-lg">
+          <img
+            src={python_robot}
+            alt="python_robot"
+            className="h-48 w-4/5 mx-auto md:h-60 md:w-110 rounded-xl object-cover"
+          />
+          <div className="mt-3 max-w-xs text-lg font-bold tracking-tight md:text-xl text-left pl-11 sm:pl-0">
+            
+            <PointerHighlight
+              rectangleClassName="bg-neutral-100 dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700 leading-loose"
+              pointerClassName="text-perpule-500 h-6 w-6"
+              containerClassName="inline-block ml-2 mr-2"
+            >
+              <span className="relative z-10 p-1"> Telegram Bot </span>
+            </PointerHighlight>
+            with python
+          </div>
+          <p className="mt-3 text-base text-neutral-500 text-left pl-11 sm:pl-0">
+            Advanced Telegram bot 🤖 built with Python and Telethon that automates VPN configuration retrieval and testing ⚡. Features include V2Ray/VMESS/VLESS protocol support 🔒, automated connectivity testing with latency measurement 📊, and intelligent proxy management across multiple Telegram channels 🌐.
+          </p>
+        </div>
       </div>
+
+
+
 
       <div className="relative max-w-6xl mx-auto">
         <FadeContent
