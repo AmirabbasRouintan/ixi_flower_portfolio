@@ -1,9 +1,10 @@
 "use client";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
+import { Database, Shield, Smartphone, Terminal } from "lucide-react";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import python_tele_bot from "../assets/python_tel_bot2.png";
-
+import { SocialMediaButtons } from "./social-media-buttons";
 import { TypingAnimation } from "./ui/typing-animation";
 import { AnimatePresence, motion } from "motion/react";
 import ifi_colector from "../assets/ifi_collector.png";
@@ -14,12 +15,11 @@ import bg_video from "../assets/bg_video.png";
 import thunder1 from "../assets/thunder.svg";
 import plastic from "../assets/plastic1.png";
 import img10 from "../assets/grid/img10.png";
+import DecryptedText from "./DecryptedText";
 import { useEffect, useState } from "react";
 import img1 from "../assets/grid/img1.png";
 import img2 from "../assets/grid/img2.png";
 import img3 from "../assets/grid/img3.png";
-import { SocialMediaButtons } from "./social-media-buttons";
-
 import img4 from "../assets/grid/img4.png";
 import img5 from "../assets/grid/img5.png";
 import img6 from "../assets/grid/img6.png";
@@ -32,19 +32,11 @@ import nvim from "../assets/nvim1.png";
 import TiltedCard from "./TiltedCard";
 import God1 from "../assets/god1.svg";
 import God2 from "../assets/god2.svg";
-import DecryptedText from "./DecryptedText";
-
 import God4 from "../assets/god4.svg";
 import PageFooter from "./PageFooter";
 import eco from "../assets/eco1.png";
 import ShinyText from "./ShinyText";
 import Masonry from "./Masonry";
-import {
-  Database,
-  Shield,
-  Smartphone,
-  Terminal,
-} from "lucide-react";
 import React from "react";
 
 const courses = [
@@ -120,7 +112,6 @@ const courses = [
   },
 ];
 
-// Define items with proper typing to match the Item interface
 const items: Array<{
   id: string;
   img: string;
@@ -595,19 +586,20 @@ export function Portfolio() {
             </div>
 
             <div className="mt-16 text-white max-w-4xl mx-auto">
-              <h3 className="text-2xl font-semibold mb-4">Adaptability & Quick Learning</h3>
-              <ShinyText 
-                text="I possess exceptional ability to quickly learn and adapt to new technologies. Beyond my core skills, I've worked with numerous programming languages including C#, Go, Kotlin, Lua, and many others. This versatility allows me to select the right tool for each project and seamlessly integrate into diverse development environments." 
-                disabled={false} 
-                speed={3} 
-                className="custom-class text-center mx-auto" 
+              <h3 className="text-2xl font-semibold mb-4">
+                Adaptability & Quick Learning
+              </h3>
+              <ShinyText
+                text="I possess exceptional ability to quickly learn and adapt to new technologies. Beyond my core skills, I've worked with numerous programming languages including C#, Go, Kotlin, Lua, and many others. This versatility allows me to select the right tool for each project and seamlessly integrate into diverse development environments."
+                disabled={false}
+                speed={3}
+                className="custom-class text-center mx-auto"
               />
             </div>
           </FadeContent>
         </div>
       </div>
 
-      
       <h2 className="text-4xl font-bold text-white mt-40 sm:mt-20 mb-15 sm:mb-20">
         Education - Courses
       </h2>
@@ -828,7 +820,6 @@ export function Portfolio() {
         />
       </div>
       <CanvasRevealEffectDemo />
-      
       <SocialMediaButtons />
       <PageFooter />
     </div>
