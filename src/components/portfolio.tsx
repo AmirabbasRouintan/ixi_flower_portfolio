@@ -284,7 +284,7 @@ export function Portfolio() {
             {courses &&
               courses.map((course) => (
                 <div key={course.id}>
-                  <div className="rounded-lg p-4 h-20 flex items-start overflow-hidden shadow-lg border border-[#3A3A3A] border-opacity-30">
+                  <div className="rounded-lg p-4 h-20 flex items-start overflow-hidden shadow-lg border-opacity-30">
                     {isLoading ? (
                       <div className="max-w-[300px] w-full flex items-center gap-3">
                         <div>
