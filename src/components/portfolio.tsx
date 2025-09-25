@@ -212,12 +212,12 @@ export function Portfolio() {
         speed={3}
         className="custom-class mt-3 dancing-script-ixi text-2xl"
       />
-      <div className="flex items-center justify-between">
-        <div className="text-center md:text-left md:pl-40 pl-0">
-          <h1 className="text-4xl md:text-7xl text-white font-extrabold mt-40 md:mt-0">
+      <div className="flex items-center justify-center md:justify-between flex-col md:flex-row mt-10 md:mt-20">
+        <div className="text-center md:text-left md:pl-20 pl-0 w-full md:w-2/3">
+          <h1 className="text-4xl md:text-4xl lg:text-5xl text-white font-extrabold mt-10 md:mt-0">
             Amirabbas Rouintan
           </h1>
-          <TypingAnimation className="text-[#575757] mt-10 text-base md:text-lg w-full md:w-[700px] text-center md:text-left">
+          <TypingAnimation className="text-center text-[#575757] mt-6 text-sm md:text-base lg:text-lg w-full md:w-[75%] md:text-left">
             My name is{" "}
             <strong className="text-[#7a7a71]">Amirabbas Rouintan</strong>, but
             online, I'm known as{" "}
@@ -248,9 +248,9 @@ export function Portfolio() {
           scale={1.1}
           threshold={0.9}
           delay={0.5}
-          className="md:block hidden"
+          className="md:block hidden w-full md:w-1/3 flex justify-center mt-10 md:mt-0"
         >
-          <img src={God1} alt="Profile" className="w-170 h-auto rounded-full" />
+          <img src={God1} alt="Profile" className="w-56 md:w-64 lg:w-[100%] h-auto rounded-full shadow-lg" />
         </AnimatedContent>
       </div>
       <div className="relative mt-50 sm:mt-20 md:mt-60 flex flex-col items-center">
@@ -270,7 +270,7 @@ export function Portfolio() {
           easing="ease-out"
           initialOpacity={0}
         >
-          <h2 className="text-4xl font-bold text-white mb-10 sm:mb-20">
+          <h2 className="text-4xl font-bold text-white">
             Education - Courses
           </h2>
         </FadeContent>
@@ -280,7 +280,7 @@ export function Portfolio() {
           easing="ease-out"
           initialOpacity={0}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 w-full max-w-4xl px-4 sm:px-6 auto-rows-fr">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full max-w-4xl px-4 sm:px-6 auto-rows-fr">
             {courses &&
               courses.map((course) => (
                 <div key={course.id}>
@@ -601,10 +601,10 @@ export function Portfolio() {
         </div>
       </div>
 
-      <h2 className="text-4xl font-bold text-white mt-40 sm:mt-20 mb-15 sm:mb-20">
+      <h2 className="text-4xl font-bold text-white mt-40 sm:mt-30 mb-15 sm:mb-20">
         My Projects
       </h2>
-      <div className="mx-auto grid max-w-[80rem] grid-cols-1 gap-12 sm:grid-cols-3 text-white mt-10 sm:mt-0 mb-40 sm:mb-60">
+      <div className="mx-auto grid max-w-[95%] grid-cols-1 gap-12 sm:grid-cols-3 text-white mt-10 sm:mt-0 mb-40 sm:mb-60">
         <div className="rounded-lg">
           <img
             src={plastic}
@@ -760,7 +760,7 @@ export function Portfolio() {
 
       <div className="flex flex-col-reverse sm:flex-row items-start m-8 sm:m-10 md:m-20 lg:m-40 mt-30 sm:mt-40 lg:mt-60">
         <div className="text-[0.3rem] leading-tight text-left flex-1 mt-4 sm:mt-10 text-[#575757]">
-          <p className="text-base sm:text-lg md:text-xl w-full max-w-[400px] sm:max-w-[400px] md:max-w-[550px]">
+          <p className="text-base sm:text-lg lg:text-[400%]  md:text-[300%] w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%]">
             This project is a{" "}
             <strong className="text-[#7a7a71] font-semibold">
               comprehensive Telegram Bot Creation Platform
@@ -809,15 +809,15 @@ export function Portfolio() {
             </PointerHighlight>
           </div>
         </div>
-        <div className="flex-shrink-0 flex justify-center mx-auto sm:mr-100 md:mr-20 lg:mr-50 mt-5 sm:mt-0">
+        <div className="flex-shrink-0 flex justify-center mx-auto sm:mr-100 md:mr-50 lg:mr-[5%] mt-5 sm:mt-0">
           <TiltedCard
             imageSrc={video1}
             altText="Bot U"
             captionText="Bot U"
             containerHeight={window.innerWidth < 640 ? "300px" : "300px"}
             containerWidth={window.innerWidth < 640 ? "150px" : "300px"}
-            imageHeight={window.innerWidth < 640 ? "250px" : "400px"}
-            imageWidth={window.innerWidth < 640 ? "400px" : "600px"}
+            imageHeight={window.innerWidth < 640 ? "250px" : "130%"}
+            imageWidth={window.innerWidth < 640 ? "400px" : "170%"}
             rotateAmplitude={6}
             scaleOnHover={1.1}
             showMobileWarning={false}

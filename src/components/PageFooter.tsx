@@ -40,9 +40,9 @@ const PageFooter: React.FC = () => {
             opacity: 0.5
           }}
         />
-        <div className="relative h-full flex flex-col justify-end items-center pb-32">
+        <div className="relative h-full flex flex-col justify-end items-center pb-30 lg:pb-[4%]">
           <div
-            className="grid grid-cols-3 gap-8 max-w-[1200px] mx-auto mb-20"
+            className="grid grid-cols-3 gap-8 max-w-[100%] mx-auto mb-[5%]"
           >
             <div className="text-center">
               <CountUp 
