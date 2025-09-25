@@ -29,7 +29,7 @@ const PageFooter: React.FC = () => {
 
   return (
     <>
-      <footer className="relative w-full h-screen pt-20 pb-8 sm:mt-20">
+      <footer className="relative w-screen h-screen pt-20 pb-8 sm:mt-20">
         <div 
           className="absolute inset-0"
           style={{
